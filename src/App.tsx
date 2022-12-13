@@ -63,13 +63,14 @@ export default function Apps() {
       const latestState = getLatestData(streams, stream);
       let features = point;
       if (typeof latestState !== "string" && latestState !== undefined) {
-        if (streams[stream].data[0].name === "heatmap_point_location") {
+        if (streams[stream].data[0].name === "Heatmap_test") {
           latitude = latestState[1].latitude;
           longitude = latestState[1].longitude;
         }
-        if (streams[stream].data[0].name === "heatmap_point_weight") {
-          weight = latestState[1];
-        }
+        // if (streams[stream].data[0].name === "heatmap_point_weight") {
+          // weight = latestState[1];
+        // }
+        weight=1;
       }
       if (!!latitude && !!longitude && !!weight) {
         let feature: feature = {
