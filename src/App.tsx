@@ -94,7 +94,8 @@ export default function Apps() {
     map.current = new mapboxgl.Map({
       container: mapContainer.current!,
       style: "mapbox://styles/alenjdev/ckwcflbv8201814n10hxbqz6q",
-      center: [-86.78843321115833, 36.15309705831918],
+      //center: [-86.78843321115833, 36.15309705831918],
+      center: [59.591225243, 16.514990852],
       zoom: 11,
     });
   }, []);
